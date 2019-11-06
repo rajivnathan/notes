@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Codewind Lab Handout</title>
+</head>
+
+<body>
+    <header>
+        <div id="content">
+        </div>
+    </header> 
+    <script>
+        for (var i = 1; i <= 100; i++) {
+            var d1 = document.getElementById("content");
+            d1.insertAdjacentHTML('beforeend', '<img src="https://www.eclipse.org/codewind/images/header-logo.svg"></img>');
+            d1.insertAdjacentHTML('beforeend', '<h2>Codewind Lab Setup</h2>');
+            d1.insertAdjacentHTML('beforeend', '<p>The lab requires that you bring your own device and have Microsoft Remote Desktop installed for login to the Lab VM.</p>');
+            d1.insertAdjacentHTML('beforeend', `<p>IP address: 192.168.0.${i}</p>`);
+            d1.insertAdjacentHTML('beforeend', '<p>User: user</p>');
+            d1.insertAdjacentHTML('beforeend', '<p>Password: password</p>');
+            d1.insertAdjacentHTML('beforeend', '<p>Once you\'ve logged in to the VM, open Firefox and follow the instructions in the README</p>');
+            d1.insertAdjacentHTML('beforeend', '<br>');
+        }
+        document.appendChild(toAdd);
+    </script>
+
+</body>
+
+</html>
